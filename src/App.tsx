@@ -1,10 +1,12 @@
-import { res } from "./utils/cloudbase";
-
-console.log(res.data[0].nickName);
-const nickName = res.data[0].nickName;
+import Board from "./pages/board";
+import UnAudit from "pages/unAudit";
 
 function App() {
-  return <div>{nickName}</div>;
+  return (
+    <div>
+      <Board children={<UnAudit />} />
+    </div>
+  );
 }
 
 export default App;
