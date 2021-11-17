@@ -13,11 +13,10 @@ const UnAudit: FC = () => {
     mutation.mutate({ isAudit: true });
   };
 
-  if (isLoading) return <>"Loading..."</>;
+  if (isLoading) return <>Loading...</>;
 
-  if (error) return <>"An error has occurred: " + (error as any).message;</>;
+  if (error) return <>An error has occurred: {(error as any).message}</>;
 
-  console.log((user as any).data);
   const columns = [
     {
       title: "昵称",

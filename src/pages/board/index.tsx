@@ -1,43 +1,53 @@
 import { Layout, Menu, Breadcrumb } from "antd";
-import {
-  DesktopOutlined,
-  PieChartOutlined,
-  FileOutlined,
-  TeamOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+import { DesktopOutlined, PieChartOutlined } from "@ant-design/icons";
 import React, { useState } from "react";
+import { Route, Link, Routes, useLocation } from "react-router-dom";
+import UnAudit from "pages/unAudit";
+import Lab from "pages/lab";
 import "./index.scss";
 
 const { Header, Content, Footer, Sider } = Layout;
-const { SubMenu } = Menu;
+const routes = [
+  {
+    key: "1",
+    path: "unaudit",
+    name: "待审核用户",
+    icon: <PieChartOutlined />,
+    element: <UnAudit />,
+  },
+  {
+    key: "2",
+    path: "lab",
+    name: "实验室管理",
+    icon: <DesktopOutlined />,
+    element: <Lab />,
+  },
+];
 
-const Board: React.FC = (props) => {
+const Board: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
+  const location = useLocation();
+
+  const defaultSelectedKey =
+    routes.find((route) => location.pathname.slice(1) === route.path)?.key ||
+    "1";
 
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <Sider collapsible collapsed={collapsed} onCollapse={setCollapsed}>
         <div className="logo" />
-        <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
-          <Menu.Item key="1" icon={<PieChartOutlined />}>
-            待审核用户
-          </Menu.Item>
-          <Menu.Item key="2" icon={<DesktopOutlined />}>
-            Option 2
-          </Menu.Item>
-          <SubMenu key="sub1" icon={<UserOutlined />} title="User">
-            <Menu.Item key="3">Tom</Menu.Item>
-            <Menu.Item key="4">Bill</Menu.Item>
-            <Menu.Item key="5">Alex</Menu.Item>
-          </SubMenu>
-          <SubMenu key="sub2" icon={<TeamOutlined />} title="Team">
-            <Menu.Item key="6">Team 1</Menu.Item>
-            <Menu.Item key="8">Team 2</Menu.Item>
-          </SubMenu>
-          <Menu.Item key="9" icon={<FileOutlined />}>
-            Files
-          </Menu.Item>
+        <Menu
+          theme="dark"
+          defaultSelectedKeys={[defaultSelectedKey]}
+          mode="inline"
+        >
+          {routes.map((route) => {
+            return (
+              <Menu.Item key={route.key} icon={route.icon}>
+                <Link to={route.path}>{route.name}</Link>
+              </Menu.Item>
+            );
+          })}
         </Menu>
       </Sider>
       <Layout className="site-layout">
@@ -51,7 +61,18 @@ const Board: React.FC = (props) => {
             className="site-layout-background"
             style={{ padding: 24, minHeight: 360 }}
           >
-            {props.children}
+            <Routes>
+              {routes.map((route) => {
+                return (
+                  <Route
+                    key={route.key}
+                    path={route.path}
+                    element={route.element}
+                  />
+                );
+              })}
+              <Route path="*" element={<UnAudit />}></Route>
+            </Routes>
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
