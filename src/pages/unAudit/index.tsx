@@ -1,5 +1,6 @@
-import type { FC, MouseEvent } from "react";
+import { FC, MouseEvent, useEffect } from "react";
 import { Avatar, Table, Tag } from "antd";
+import type { user } from "types/index";
 import {
   useGetUnAuditUser,
   useAuditUser,
@@ -8,9 +9,10 @@ import {
 const UnAudit: FC = () => {
   const { isLoading, error, data: user } = useGetUnAuditUser();
   const mutation = useAuditUser();
+
   const getThrough = (e: MouseEvent) => {
     e && e.preventDefault();
-    mutation.mutate({ isAudit: true });
+    mutation.mutate({ ...(user?.data[0] as user), isAudit: true });
   };
 
   if (isLoading) return <>Loading...</>;

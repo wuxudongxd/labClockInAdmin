@@ -1,5 +1,6 @@
 import { db } from "src/hooks/cloudbase/cloudbase";
 import { useQuery, useMutation, useQueryClient } from "react-query";
+import type { user } from "types/index";
 
 const _ = db.command;
 
@@ -20,12 +21,22 @@ export const useGetUnAuditUser = () => {
 };
 
 export const useAuditUser = () => {
-  const mutation = useMutation((data: Object) =>
-    db.collection("user").update(data)
-  );
   const queryClient = useQueryClient();
-  if (mutation.isSuccess) {
-    queryClient.invalidateQueries("auth");
-  }
+  const mutation = useMutation(
+    (data: user) =>
+      db
+        .collection("user")
+        .where({
+          _id: _.eq(data._id),
+        })
+        .update({
+          isAudit: true,
+        }),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries("unAuditUser");
+      },
+    }
+  );
   return mutation;
 };

@@ -20,8 +20,4 @@ async function login() {
   console.log(loginState?.isAnonymousAuth); // true
 }
 
-console.log("hasAuth...");
-
 export const db = app.database();
-
-export const res = await db.collection("user").get();
