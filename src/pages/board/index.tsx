@@ -54,8 +54,12 @@ const Board: React.FC = () => {
         <Header className="site-layout-background" style={{ padding: 0 }} />
         <Content style={{ margin: "0 16px" }}>
           <Breadcrumb style={{ margin: "16px 0" }}>
-            <Breadcrumb.Item>User</Breadcrumb.Item>
-            <Breadcrumb.Item>Audit</Breadcrumb.Item>
+            <Breadcrumb.Item>Admin</Breadcrumb.Item>
+            <Breadcrumb.Item>
+              {location.pathname
+                .slice(1)
+                .replace(/^\S/, (s) => s.toUpperCase())}
+            </Breadcrumb.Item>
           </Breadcrumb>
           <div
             className="site-layout-background"
