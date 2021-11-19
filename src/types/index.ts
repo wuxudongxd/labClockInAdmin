@@ -4,8 +4,12 @@ export interface user {
   isAudit: boolean;
   nickName: string;
 }
+export interface location {
+  longitude: number;
+  latitude: number;
+};
 
 export interface lab {
   name: string;
-  locations: [latitude: string, longitude: string][];
+  locations: location[];
 }

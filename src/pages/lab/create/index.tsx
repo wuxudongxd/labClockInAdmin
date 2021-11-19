@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Button, Drawer, Form, Input } from "antd";
 import { useAddLabs } from "hooks/cloudbase/useLab";
-import type { lab } from "types/index";
+import type { lab, location } from "types/index";
 import Map from "./map";
 import "./index.scss";
 
@@ -23,9 +23,9 @@ const CreateLab: FC<CreateLabProps> = ({ visible, setVisible }) => {
   };
 
   // 将map坐标传入form
-  const onMapChange = (locations: number[]) => {
+  const onMapChange = (locations: location[]) => {    
     const fields = form.getFieldsValue();
-    Object.assign(fields, { locations: [locations] });
+    Object.assign(fields, { locations });
     form.setFieldsValue(fields);
   };
 

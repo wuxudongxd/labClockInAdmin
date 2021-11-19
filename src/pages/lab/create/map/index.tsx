@@ -1,16 +1,17 @@
 import { Amap, Marker } from "@amap/amap-react";
 import { FC, useEffect, useState } from "react";
+import type { location } from "types/index";
 import "./index.scss";
 
-interface MapProps  {
-  onMapChange: (locations: number[]) => void;
+interface MapProps {
+  onMapChange: (locations: location[]) => void;
 }
 
 const Map: FC<MapProps> = ({ onMapChange }) => {
   const [position, setPosition] = useState([103.989433, 30.581442]);
   useEffect(() => {
-    onMapChange(position);
-  }, [])
+    onMapChange([{ longitude: position[0], latitude: position[1] }]);
+  }, []);
 
   return (
     <div className="map-container">
@@ -24,7 +25,9 @@ const Map: FC<MapProps> = ({ onMapChange }) => {
           draggable
           onDragging={(m) => {
             const lnglat = m.getPosition() as AMap.LngLat;
-            onMapChange([lnglat.getLng(), lnglat.getLat()]);
+            onMapChange([
+              { longitude: lnglat.getLng(), latitude: lnglat.getLat() },
+            ]);
             setPosition([lnglat.getLng(), lnglat.getLat()]);
           }}
         />
