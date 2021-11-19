@@ -10,7 +10,9 @@ export const auth = app.auth({
 
 // 应用初始化时
 if (!auth.hasLoginState()) {
-  await login();
+  (async () => {
+    await login();
+  })();
 }
 
 async function login() {
