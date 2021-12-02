@@ -2,9 +2,8 @@ import { Layout, Menu, Breadcrumb } from "antd";
 import { DesktopOutlined, PieChartOutlined } from "@ant-design/icons";
 import React, { useState } from "react";
 import { Route, Link, Routes, useLocation } from "react-router-dom";
-import UnAudit from "pages/unAudit";
+import UnAudit from "src/pages/unAudit";
 import Lab from "pages/lab";
-import "./index.scss";
 
 const { Header, Content, Footer, Sider } = Layout;
 const routes = [
@@ -35,7 +34,7 @@ const Board: React.FC = () => {
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <Sider collapsible collapsed={collapsed} onCollapse={setCollapsed}>
-        <div className="logo" />
+        <div className="h-8 m-4 bg-white bg-opacity-30" />
         <Menu
           theme="dark"
           defaultSelectedKeys={[defaultSelectedKey]}
@@ -50,8 +49,8 @@ const Board: React.FC = () => {
           })}
         </Menu>
       </Sider>
-      <Layout className="site-layout">
-        <Header className="site-layout-background" style={{ padding: 0 }} />
+      <Layout>
+        <Header className="bg-white" style={{ padding: 0 }} />
         <Content style={{ margin: "0 16px" }}>
           <Breadcrumb style={{ margin: "16px 0" }}>
             <Breadcrumb.Item>Admin</Breadcrumb.Item>
@@ -61,10 +60,7 @@ const Board: React.FC = () => {
                 .replace(/^\S/, (s) => s.toUpperCase())}
             </Breadcrumb.Item>
           </Breadcrumb>
-          <div
-            className="site-layout-background"
-            style={{ padding: 24, minHeight: 360 }}
-          >
+          <div className="bg-white" style={{ padding: 24, minHeight: 360 }}>
             <Routes>
               {routes.map((route) => {
                 return (

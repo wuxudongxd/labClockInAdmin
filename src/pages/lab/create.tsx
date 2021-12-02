@@ -3,7 +3,6 @@ import { Button, Drawer, Form, Input } from "antd";
 import { useAddLabs } from "hooks/cloudbase/useLab";
 import type { lab, location } from "types/index";
 import Map from "./map";
-import "./index.scss";
 
 interface CreateLabProps {
   visible: boolean;
@@ -23,7 +22,7 @@ const CreateLab: FC<CreateLabProps> = ({ visible, setVisible }) => {
   };
 
   // 将map坐标传入form
-  const onMapChange = (locations: location[]) => {    
+  const onMapChange = (locations: location[]) => {
     const fields = form.getFieldsValue();
     Object.assign(fields, { locations });
     form.setFieldsValue(fields);
@@ -41,7 +40,7 @@ const CreateLab: FC<CreateLabProps> = ({ visible, setVisible }) => {
       visible={visible}
       width={"100%"}
     >
-      <div className="container">
+      <div className=" flex flex-col justify-center items-center">
         <Form
           form={form}
           layout={"vertical"}

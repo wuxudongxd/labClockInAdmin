@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import AppProvider from "src/utils/AppProvider";
-import "antd/dist/antd.css";
 import { config as AmapReactConfig } from "@amap/amap-react";
+import "antd/dist/antd.css";
+import "./index.css";
 
 AmapReactConfig.key = "ae67de08c990eadfd6d1a366f6ff4221";
 (AmapReactConfig.plugins as any) = [

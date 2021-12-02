@@ -1,4 +1,4 @@
-import { FC, MouseEvent, useEffect } from "react";
+import { FC, MouseEvent } from "react";
 import { Avatar, Table, Tag } from "antd";
 import type { user } from "types/index";
 import {

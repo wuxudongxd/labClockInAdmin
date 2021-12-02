@@ -1,7 +1,6 @@
 import { Amap, Marker } from "@amap/amap-react";
 import { FC, useEffect, useState } from "react";
 import type { location } from "types/index";
-import "./index.scss";
 
 interface MapProps {
   onMapChange: (locations: location[]) => void;
@@ -14,7 +13,7 @@ const Map: FC<MapProps> = ({ onMapChange }) => {
   }, []);
 
   return (
-    <div className="map-container">
+    <div className="w-full h-96 relative">
       <Amap zoom={18} center={[103.989433, 30.581442]}>
         <Marker
           position={position}
