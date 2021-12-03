@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { Button, Drawer, Form, Input } from "antd";
+import { Button, Drawer, Form, Input, InputNumber } from "antd";
 import { useAddLabs } from "hooks/cloudbase/useLab";
 import type { lab, location } from "types/index";
-import Map from "./map";
+import LabMap from "./map"
 
 interface CreateLabProps {
   visible: boolean;
@@ -55,12 +55,17 @@ const CreateLab: FC<CreateLabProps> = ({ visible, setVisible }) => {
             <Input placeholder={"请输入实验室名称"} />
           </Form.Item>
 
+          <Form.Item label={"实验室位置"} name={"locations"}>
+            <LabMap onMapChange={onMapChange} />
+          </Form.Item>
+
           <Form.Item
-            label={"实验室位置"}
-            name={"locations"}
-            // rules={[{ required: true, message: "请输入项目名" }]}
+            label={"签到有效范围"}
+            name={"range"}
+            rules={[{ required: true, message: "请输入签到有效范围" }]}
+            initialValue={10}
           >
-            <Map onMapChange={onMapChange} />
+            <InputNumber addonAfter="米" />
           </Form.Item>
 
           <Form.Item style={{ textAlign: "right" }}>

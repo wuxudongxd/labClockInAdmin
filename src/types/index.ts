@@ -12,4 +12,5 @@ export interface location {
 export interface lab {
   name: string;
   locations: location[];
+  range: number;
 }

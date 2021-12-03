@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@amap/amap-react@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.npmmirror.com/@amap/amap-react/download/@amap/amap-react-0.1.3.tgz#e0e7d6d3810a11963ae7563e3d837a54421373f8"
-  integrity sha1-4OfW04EKEZY651Y+PYN6VEITc/g=
-
 "@ant-design/colors@^6.0.0":
   version "6.0.0"
   resolved "https://registry.npmmirror.com/@ant-design/colors/download/@ant-design/colors-6.0.0.tgz#9b9366257cffcc47db42b9d0203bb592c13c0298"
@@ -422,6 +417,34 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@pansy/amap-api-loader@0.3.10":
+  version "0.3.10"
+  resolved "https://registry.npmmirror.com/@pansy/amap-api-loader/download/@pansy/amap-api-loader-0.3.10.tgz#fccd59df2b6b33f61308d36ed8b7c1e1b8dc4678"
+  integrity sha512-hzWK2hgOUgTikY+1V4S4mFCSdW70x3qpkmKxqBr7b4Oy5Zb5maTQ9D4S0wUlmWywnjIl/9nII558tBTrjJsNpw==
+  dependencies:
+    "@pansy/amap-types" "2.16.1"
+
+"@pansy/amap-types@2.16.1":
+  version "2.16.1"
+  resolved "https://registry.npmmirror.com/@pansy/amap-types/download/@pansy/amap-types-2.16.1.tgz#4a20643ec2b8acc7cff6c760dbf08684dec4e2e1"
+  integrity sha512-P2V42LpOTWSz8BIj/ed0XvXHkvAg7JHfxy0x96iawRc6Iy3MtjAKd0/6lTdXU8Zcwm2DjVRZyP+dO8eF3YLZAg==
+
+"@pansy/react-amap-core@1.2.5":
+  version "1.2.5"
+  resolved "https://registry.npmmirror.com/@pansy/react-amap-core/download/@pansy/react-amap-core-1.2.5.tgz#4f21d6eecf9d9edfeb5c1c932595e2847f81b8af"
+  integrity sha512-WvN08mu7zAkgHmI4CbH8U1liEzC2LsvlTZ8yrQtJcXbCptWHKZk4TMEYhVpu+eO7O/Pkne3AZ1HkFefjZo5rww==
+  dependencies:
+    "@pansy/amap-types" "2.16.1"
+
+"@pansy/react-amap@^2.12.2":
+  version "2.12.2"
+  resolved "https://registry.npmmirror.com/@pansy/react-amap/download/@pansy/react-amap-2.12.2.tgz#75ccc1e1071aa72852376f372afdb0c377d10774"
+  integrity sha512-X8mUrndL3wTsz+wtpQbA/uGdjudt0VUI6JZ3Jhj2WiL5rWfUwgeBrlbpkjLj944ZwuHoXkFp7rxM6NdF4Z/clg==
+  dependencies:
+    "@pansy/amap-api-loader" "0.3.10"
+    "@pansy/amap-types" "2.16.1"
+    "@pansy/react-amap-core" "1.2.5"
 
 "@rollup/pluginutils@^4.1.1":
   version "4.1.1"
