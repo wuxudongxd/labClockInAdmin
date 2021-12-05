@@ -418,33 +418,33 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pansy/amap-api-loader@0.3.10":
-  version "0.3.10"
-  resolved "https://registry.npmmirror.com/@pansy/amap-api-loader/download/@pansy/amap-api-loader-0.3.10.tgz#fccd59df2b6b33f61308d36ed8b7c1e1b8dc4678"
-  integrity sha512-hzWK2hgOUgTikY+1V4S4mFCSdW70x3qpkmKxqBr7b4Oy5Zb5maTQ9D4S0wUlmWywnjIl/9nII558tBTrjJsNpw==
+"@pansy/amap-api-loader@0.3.11":
+  version "0.3.11"
+  resolved "https://registry.npmmirror.com/@pansy/amap-api-loader/download/@pansy/amap-api-loader-0.3.11.tgz#7fd9ef0ef34daacb926ed087704233d2bc77e14c"
+  integrity sha512-KWLfIElyqez/ycagTrO4kYT658BK156o/N/K7GeClAlSfull3qXN5641tx+n9HicSXs3X+OoQ7pT9THmWsGZ8Q==
   dependencies:
-    "@pansy/amap-types" "2.16.1"
+    "@pansy/amap-types" "2.16.2"
 
-"@pansy/amap-types@2.16.1":
-  version "2.16.1"
-  resolved "https://registry.npmmirror.com/@pansy/amap-types/download/@pansy/amap-types-2.16.1.tgz#4a20643ec2b8acc7cff6c760dbf08684dec4e2e1"
-  integrity sha512-P2V42LpOTWSz8BIj/ed0XvXHkvAg7JHfxy0x96iawRc6Iy3MtjAKd0/6lTdXU8Zcwm2DjVRZyP+dO8eF3YLZAg==
+"@pansy/amap-types@2.16.2":
+  version "2.16.2"
+  resolved "https://registry.npmmirror.com/@pansy/amap-types/download/@pansy/amap-types-2.16.2.tgz#2b4489cbccad307b08764fce21502a844367b4fc"
+  integrity sha512-y+gUfCPPwCmJzK1JGNxGTcgSiHRvkTxtBWeFsVXKje35v9jv7qJr28CIlqX6dHi7Oyh+jeqacxWWs5nnUTFa1g==
 
-"@pansy/react-amap-core@1.2.5":
-  version "1.2.5"
-  resolved "https://registry.npmmirror.com/@pansy/react-amap-core/download/@pansy/react-amap-core-1.2.5.tgz#4f21d6eecf9d9edfeb5c1c932595e2847f81b8af"
-  integrity sha512-WvN08mu7zAkgHmI4CbH8U1liEzC2LsvlTZ8yrQtJcXbCptWHKZk4TMEYhVpu+eO7O/Pkne3AZ1HkFefjZo5rww==
+"@pansy/react-amap-core@1.2.6":
+  version "1.2.6"
+  resolved "https://registry.npmmirror.com/@pansy/react-amap-core/download/@pansy/react-amap-core-1.2.6.tgz#3eb1c522ebc0092ed203ef38b4b9343e73fed9b8"
+  integrity sha512-XPZWWOMOqW/ntXZkIxGbf/Q6JdxfYp1v1MphwqhqpPVwuR0WO61xqsEhJnaMw0hy3ftLRL6RPhAIn9MQMvsNoA==
   dependencies:
-    "@pansy/amap-types" "2.16.1"
+    "@pansy/amap-types" "2.16.2"
 
-"@pansy/react-amap@^2.12.2":
-  version "2.12.2"
-  resolved "https://registry.npmmirror.com/@pansy/react-amap/download/@pansy/react-amap-2.12.2.tgz#75ccc1e1071aa72852376f372afdb0c377d10774"
-  integrity sha512-X8mUrndL3wTsz+wtpQbA/uGdjudt0VUI6JZ3Jhj2WiL5rWfUwgeBrlbpkjLj944ZwuHoXkFp7rxM6NdF4Z/clg==
+"@pansy/react-amap@^2.12.3":
+  version "2.12.3"
+  resolved "https://registry.npmmirror.com/@pansy/react-amap/download/@pansy/react-amap-2.12.3.tgz#bce126d719574c8eaa6189a371e07b5ec822b193"
+  integrity sha512-ViFnjIwIN4C7Ro4+3RrjIiztgPwLJUSuyKO2mXkur0M/vjV7G5W1wpXo/SGfd+j+1H8yxy1QRd/JPzSMAtYfXA==
   dependencies:
-    "@pansy/amap-api-loader" "0.3.10"
-    "@pansy/amap-types" "2.16.1"
-    "@pansy/react-amap-core" "1.2.5"
+    "@pansy/amap-api-loader" "0.3.11"
+    "@pansy/amap-types" "2.16.2"
+    "@pansy/react-amap-core" "1.2.6"
 
 "@rollup/pluginutils@^4.1.1":
   version "4.1.1"
