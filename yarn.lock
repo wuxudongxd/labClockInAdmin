@@ -346,10 +346,10 @@
     "@cloudbase/types" "^1.1.3-alpha.0"
     "@cloudbase/utilities" "^1.3.4"
 
-"@cloudbase/js-sdk@^1.7.1":
+"@cloudbase/js-sdk@1.7.1":
   version "1.7.1"
-  resolved "https://registry.npmmirror.com/@cloudbase/js-sdk/download/@cloudbase/js-sdk-1.7.1.tgz#86c6ecf4971a20b57e156c094129096a26c1853e"
-  integrity sha1-hsbs9JcaILV+FWwJQSkJaibBhT4=
+  resolved "https://registry.yarnpkg.com/@cloudbase/js-sdk/-/js-sdk-1.7.1.tgz#86c6ecf4971a20b57e156c094129096a26c1853e"
+  integrity sha512-pcK2mb8Ee1mXJxvkVULCAvJXHQJLWJGFJ/lfeLgidG9R4pNNF/evdt5B769vWjfNWuwVV1wONeqV71LcWjDQQA==
   dependencies:
     "@cloudbase/analytics" "^1.1.1-alpha.0"
     "@cloudbase/app" "^1.4.1"
@@ -437,9 +437,9 @@
   dependencies:
     "@pansy/amap-types" "2.16.2"
 
-"@pansy/react-amap@^2.12.3":
+"@pansy/react-amap@2.12.3":
   version "2.12.3"
-  resolved "https://registry.npmmirror.com/@pansy/react-amap/download/@pansy/react-amap-2.12.3.tgz#bce126d719574c8eaa6189a371e07b5ec822b193"
+  resolved "https://registry.yarnpkg.com/@pansy/react-amap/-/react-amap-2.12.3.tgz#bce126d719574c8eaa6189a371e07b5ec822b193"
   integrity sha512-ViFnjIwIN4C7Ro4+3RrjIiztgPwLJUSuyKO2mXkur0M/vjV7G5W1wpXo/SGfd+j+1H8yxy1QRd/JPzSMAtYfXA==
   dependencies:
     "@pansy/amap-api-loader" "0.3.11"
@@ -454,9 +454,9 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@types/node@^16.11.11":
+"@types/node@16.11.11":
   version "16.11.11"
-  resolved "https://registry.npmmirror.com/@types/node/download/@types/node-16.11.11.tgz#6ea7342dfb379ea1210835bada87b3c512120234"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.11.tgz#6ea7342dfb379ea1210835bada87b3c512120234"
   integrity sha512-KB0sixD67CeecHC33MYn+eYARkqTheIRNuu97y2XMjR7Wu3XibO1vaY6VBV6O/a89SPI81cEUIYT87UqUWlZNw==
 
 "@types/parse-json@^4.0.0":
@@ -469,16 +469,16 @@
   resolved "https://registry.npmmirror.com/@types/prop-types/download/@types/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
   integrity sha1-/PcgXCXf95Xuea8eMNosl5CAjxE=
 
-"@types/react-dom@^17.0.0":
+"@types/react-dom@17.0.11":
   version "17.0.11"
-  resolved "https://registry.npmmirror.com/@types/react-dom/download/@types/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
-  integrity sha1-4ercPF6GvbX3aE4AJ0riKOe8xGY=
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
+  integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^17.0.37":
+"@types/react@*", "@types/react@17.0.37":
   version "17.0.37"
-  resolved "https://registry.npmmirror.com/@types/react/download/@types/react-17.0.37.tgz#6884d0aa402605935c397ae689deed115caad959"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.37.tgz#6884d0aa402605935c397ae689deed115caad959"
   integrity sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg==
   dependencies:
     "@types/prop-types" "*"
@@ -490,9 +490,9 @@
   resolved "https://registry.npmmirror.com/@types/scheduler/download/@types/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha1-GmL4lSVyPd4kuhsBsJK/XfitTTk=
 
-"@vitejs/plugin-react@^1.1.0":
+"@vitejs/plugin-react@1.1.0":
   version "1.1.0"
-  resolved "https://registry.npmmirror.com/@vitejs/plugin-react/download/@vitejs/plugin-react-1.1.0.tgz?cache=0&sync_timestamp=1637580292751&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vitejs%2Fplugin-react%2Fdownload%2F%40vitejs%2Fplugin-react-1.1.0.tgz#8dc889a3b37d475c4c5196bfa9dd6052182d6a1e"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-1.1.0.tgz#8dc889a3b37d475c4c5196bfa9dd6052182d6a1e"
   integrity sha512-hRAqG6/lYf0mfDm/1r0U81vwPWMpyi87e4bFK+LvVQQeIgdh6TwvfuF20waenSGSumz6JH2bfk9DbxdgDLRp/w==
   dependencies:
     "@babel/core" "^7.16.0"
@@ -537,9 +537,9 @@ ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
-antd@^4.17.2:
+antd@4.17.2:
   version "4.17.2"
-  resolved "https://registry.npmmirror.com/antd/download/antd-4.17.2.tgz#c50123e6da990d8a41bc1ed6fbfc6d587b014ae0"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-4.17.2.tgz#c50123e6da990d8a41bc1ed6fbfc6d587b014ae0"
   integrity sha512-1/xwj72mzg2ly5byvnxsgucEL5JMrinlsaAr4Y+vjobmTBSI9l9zOVkwwOG8kPIrFkhrzC1I42n6GZKnTwfZmg==
   dependencies:
     "@ant-design/colors" "^6.0.0"
@@ -609,10 +609,10 @@ async-validator@^4.0.2:
   resolved "https://registry.npmmirror.com/async-validator/download/async-validator-4.0.7.tgz?cache=0&sync_timestamp=1634529532378&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fasync-validator%2Fdownload%2Fasync-validator-4.0.7.tgz#034a0fd2103a6b2ebf010da75183bec299247afe"
   integrity sha1-A0oP0hA6ay6/AQ2nUYO+wpkkev4=
 
-autoprefixer@^10.4.0:
+autoprefixer@10.4.0:
   version "10.4.0"
-  resolved "https://registry.npmmirror.com/autoprefixer/download/autoprefixer-10.4.0.tgz#c3577eb32a1079a440ec253e404eaf1eb21388c8"
-  integrity sha1-w1d+syoQeaRA7CU+QE6vHrITiMg=
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.0.tgz#c3577eb32a1079a440ec253e404eaf1eb21388c8"
+  integrity sha512-7FdJ1ONtwzV1G43GDD0kpVMn/qbiNqyOPMFTX5nRffI+7vgWoFEc6DcXOxHJxrWNDXrZh18eDsZjvZGUljSRGA==
   dependencies:
     browserslist "^4.17.5"
     caniuse-lite "^1.0.30001272"
@@ -1571,9 +1571,9 @@ postcss-value-parser@^4.1.0:
   resolved "https://registry.npmmirror.com/postcss-value-parser/download/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@^8.1.6, postcss@^8.3.5, postcss@^8.3.8, postcss@^8.4.4:
+postcss@8.4.4, postcss@^8.1.6, postcss@^8.3.5, postcss@^8.3.8:
   version "8.4.4"
-  resolved "https://registry.npmmirror.com/postcss/download/postcss-8.4.4.tgz#d53d4ec6a75fd62557a66bb41978bf47ff0c2869"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.4.tgz#d53d4ec6a75fd62557a66bb41978bf47ff0c2869"
   integrity sha512-joU6fBsN6EIer28Lj6GDFoC/5yOZzLCfn0zHAn/MYXI7aPt4m4hK5KC5ovEZXy+lnCjmYIbQWngvju2ddyEr8Q==
   dependencies:
     nanoid "^3.1.30"
@@ -1950,10 +1950,10 @@ rc-virtual-list@^3.2.0, rc-virtual-list@^3.4.1:
     rc-resize-observer "^1.0.0"
     rc-util "^5.0.7"
 
-react-dom@^17.0.0:
+react-dom@17.0.2:
   version "17.0.2"
-  resolved "https://registry.npmmirror.com/react-dom/download/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
-  integrity sha1-7P+2hF462Nv83EmPDQqTlzZQLCM=
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
+  integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -1964,9 +1964,9 @@ react-is@^16.12.0:
   resolved "https://registry.npmmirror.com/react-is/download/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
 
-react-query@^3.34.0:
+react-query@3.34.0:
   version "3.34.0"
-  resolved "https://registry.npmmirror.com/react-query/download/react-query-3.34.0.tgz#43477ac6d117d850354e6db80dcca6d5c1b36728"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-3.34.0.tgz#43477ac6d117d850354e6db80dcca6d5c1b36728"
   integrity sha512-g6L90FeCLzz6+53CbVKYJALBiZR5icOYPjqGGiNgHNeufcnddLZaQGE9wheclk10k6g+o+Dd4/jAtswhjVblXw==
   dependencies:
     "@babel/runtime" "^7.5.5"
@@ -1978,9 +1978,9 @@ react-refresh@^0.11.0:
   resolved "https://registry.npmmirror.com/react-refresh/download/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
-react-router-dom@^6.0.2:
+react-router-dom@6.0.2:
   version "6.0.2"
-  resolved "https://registry.npmmirror.com/react-router-dom/download/react-router-dom-6.0.2.tgz#860cefa697b9d4965eced3f91e82cdbc5995f3ad"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.0.2.tgz#860cefa697b9d4965eced3f91e82cdbc5995f3ad"
   integrity sha512-cOpJ4B6raFutr0EG8O/M2fEoyQmwvZWomf1c6W2YXBZuFBx8oTk/zqjXghwScyhfrtnt0lANXV2182NQblRxFA==
   dependencies:
     history "^5.1.0"
@@ -1993,10 +1993,10 @@ react-router@6.0.2:
   dependencies:
     history "^5.1.0"
 
-react@^17.0.0:
+react@17.0.2:
   version "17.0.2"
-  resolved "https://registry.npmmirror.com/react/download/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
-  integrity sha1-0LXMUW0p6z7uOD91tihkz7aAADc=
+  resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
+  integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -2090,9 +2090,9 @@ safe-buffer@~5.1.1:
   resolved "https://registry.npmmirror.com/safe-buffer/download/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha1-mR7GnSluAxN0fVm9/St0XDX4go0=
 
-sass@^1.44.0:
+sass@1.44.0:
   version "1.44.0"
-  resolved "https://registry.npmmirror.com/sass/download/sass-1.44.0.tgz#619aa0a2275c097f9af5e6b8fe8a95e3056430fb"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.44.0.tgz#619aa0a2275c097f9af5e6b8fe8a95e3056430fb"
   integrity sha512-0hLREbHFXGQqls/K8X+koeP+ogFRPF4ZqetVB19b7Cst9Er8cOR0rc6RU7MaI4W1JmUShd1BPgPoeqmmgMMYFw==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
@@ -2171,10 +2171,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tailwindcss@^2.2.19:
+tailwindcss@2.2.19:
   version "2.2.19"
-  resolved "https://registry.npmmirror.com/tailwindcss/download/tailwindcss-2.2.19.tgz#540e464832cd462bb9649c1484b0a38315c2653c"
-  integrity sha1-VA5GSDLNRiu5ZJwUhLCjgxXCZTw=
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.2.19.tgz#540e464832cd462bb9649c1484b0a38315c2653c"
+  integrity sha512-6Ui7JSVtXadtTUo2NtkBBacobzWiQYVjYW0ZnKaP9S1ZCKQ0w7KVNz+YSDI/j7O7KCMHbOkz94ZMQhbT9pOqjw==
   dependencies:
     arg "^5.0.1"
     bytes "^3.0.0"
@@ -2233,9 +2233,9 @@ toggle-selection@^1.0.6:
   resolved "https://registry.npmmirror.com/toggle-selection/download/toggle-selection-1.0.6.tgz#6e45b1263f2017fa0acc7d89d78b15b8bf77da32"
   integrity sha1-bkWxJj8gF/oKzH2J14sVuL932jI=
 
-typescript@^4.5.2:
+typescript@4.5.2:
   version "4.5.2"
-  resolved "https://registry.npmmirror.com/typescript/download/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
   integrity sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==
 
 universalify@^2.0.0:
@@ -2256,9 +2256,9 @@ util-deprecate@^1.0.2:
   resolved "https://registry.npmmirror.com/util-deprecate/download/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
-vite@^2.6.4:
+vite@2.6.14:
   version "2.6.14"
-  resolved "https://registry.npmmirror.com/vite/download/vite-2.6.14.tgz#35c09a15e4df823410819a2a239ab11efb186271"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.6.14.tgz#35c09a15e4df823410819a2a239ab11efb186271"
   integrity sha512-2HA9xGyi+EhY2MXo0+A2dRsqsAG3eFNEVIo12olkWhOmc8LfiM+eMdrXf+Ruje9gdXgvSqjLI9freec1RUM5EA==
   dependencies:
     esbuild "^0.13.2"
