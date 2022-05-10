@@ -1,15 +1,15 @@
-export interface user {
+interface user {
   _id: string;
   avatarUrl: string;
   isAudit: boolean;
   nickName: string;
 }
-export interface location {
+interface location {
   longitude: number;
   latitude: number;
-};
+}
 
-export interface lab {
+interface lab {
   name: string;
   locations: location[];
   range: number;
