@@ -1,29 +1,12 @@
-import { Layout, Menu, Breadcrumb } from "antd";
-import { DesktopOutlined, PieChartOutlined } from "@ant-design/icons";
-import React, { useState } from "react";
-import { Route, Link, Routes, useLocation } from "react-router-dom";
-import UnAudit from "src/pages/unAudit";
-import Lab from "pages/lab";
+import { Breadcrumb, Layout, Menu } from "antd";
+import { useState } from "react";
+import { Link, Route, Routes, useLocation } from "react-router-dom";
+import routes from "~/pages/router";
+import UnAudit from "~/pages/unAudit";
 
 const { Header, Content, Footer, Sider } = Layout;
-const routes = [
-  {
-    key: "1",
-    path: "unaudit",
-    name: "待审核用户",
-    icon: <PieChartOutlined />,
-    element: <UnAudit />,
-  },
-  {
-    key: "2",
-    path: "lab",
-    name: "实验室管理",
-    icon: <DesktopOutlined />,
-    element: <Lab />,
-  },
-];
 
-const Board: React.FC = () => {
+const Board = () => {
   const [collapsed, setCollapsed] = useState(false);
   const location = useLocation();
 
@@ -32,7 +15,7 @@ const Board: React.FC = () => {
     "1";
 
   return (
-    <Layout style={{ minHeight: "100vh" }}>
+    <Layout className="min-h-screen">
       <Sider collapsible collapsed={collapsed} onCollapse={setCollapsed}>
         <div className="h-8 m-4 bg-white bg-opacity-30" />
         <Menu
@@ -42,7 +25,7 @@ const Board: React.FC = () => {
         >
           {routes.map((route) => {
             return (
-              <Menu.Item key={route.key} icon={route.icon}>
+              <Menu.Item key={route.key} icon={<route.icon />}>
                 <Link to={route.path}>{route.name}</Link>
               </Menu.Item>
             );
@@ -50,9 +33,9 @@ const Board: React.FC = () => {
         </Menu>
       </Sider>
       <Layout>
-        <Header className="bg-white" style={{ padding: 0 }} />
-        <Content style={{ margin: "0 16px" }}>
-          <Breadcrumb style={{ margin: "16px 0" }}>
+        <Header className="bg-white p-0" />
+        <Content className="my-0 mx-4">
+          <Breadcrumb className="my-4 mx-0">
             <Breadcrumb.Item>Admin</Breadcrumb.Item>
             <Breadcrumb.Item>
               {location.pathname
@@ -60,14 +43,14 @@ const Board: React.FC = () => {
                 .replace(/^\S/, (s) => s.toUpperCase())}
             </Breadcrumb.Item>
           </Breadcrumb>
-          <div className="bg-white" style={{ padding: 24, minHeight: 360 }}>
+          <div className="bg-white p-6 min-h-full">
             <Routes>
               {routes.map((route) => {
                 return (
                   <Route
                     key={route.key}
                     path={route.path}
-                    element={route.element}
+                    element={<route.element />}
                   />
                 );
               })}
@@ -75,7 +58,7 @@ const Board: React.FC = () => {
             </Routes>
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
+        <Footer className="text-center">
           Ant Design ©2018 Created by Ant UED
         </Footer>
       </Layout>

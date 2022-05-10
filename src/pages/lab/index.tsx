@@ -1,9 +1,9 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import { Button } from "antd";
 import CreateLab from "./create";
 import List from "./list";
 
-const Lab: FC = () => {
+const Lab = () => {
   const [visible, setVisible] = useState(false);
 
   const showDrawer = () => {

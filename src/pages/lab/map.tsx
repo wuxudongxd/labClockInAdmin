@@ -1,6 +1,5 @@
 import { Map, Marker } from "@pansy/react-amap";
 import { FC, useEffect, useState } from "react";
-import type { location } from "types/index";
 
 interface MapProps {
   onMapChange: (locations: location[]) => void;

@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { Button, Drawer, Form, Input, InputNumber } from "antd";
-import { useAddLabs } from "hooks/cloudbase/useLab";
-import type { lab, location } from "types/index";
+import { useAddLabs } from "~/pages/lab/useLab";
 import LabMap from "./map"
 
 interface CreateLabProps {

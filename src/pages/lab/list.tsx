@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { useGetLabs } from "hooks/cloudbase/useLab";
+import { useGetLabs } from "~/pages/lab/useLab";
 import type { location } from "types/index";
 import { Table } from "antd";
 
