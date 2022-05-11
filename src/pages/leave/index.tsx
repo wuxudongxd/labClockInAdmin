@@ -55,7 +55,9 @@ const Leave = () => {
                 ? "text-gray-500 cursor-not-allowed"
                 : "text-blue-600 cursor-pointer"
             }`}
-            onClick={() => auditLeave.mutate(id)}
+            onClick={() => {
+              !record.isAudit && auditLeave.mutate(id);
+            }}
           >
             通过
           </div>
