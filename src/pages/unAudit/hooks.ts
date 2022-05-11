@@ -8,9 +8,6 @@ const useUnAuditUser = () => {
   const unAuditUserQuery = useQuery("unAuditUser", () =>
     db
       .collection("user")
-      .where({
-        isAudit: command.eq(false),
-      })
       .field({
         avatarUrl: true,
         nickName: true,

@@ -33,10 +33,16 @@ const UnAudit = () => {
       <Column
         title="操作"
         dataIndex="_id"
-        render={(id: string) => (
+        render={(id: string, record: any) => (
           <div
-            className="text-blue-600 cursor-pointer hover:text-blue-800"
-            onClick={() => auditUser.mutate(id)}
+            className={`${
+              record.isAudit
+                ? "text-gray-500 cursor-not-allowed"
+                : "text-blue-600 cursor-pointer"
+            }`}
+            onClick={() => {
+              !record.isAudit && auditUser.mutate(id);
+            }}
           >
             通过
           </div>
