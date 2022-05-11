@@ -8,7 +8,7 @@ const Lab = () => {
 
   return (
     <>
-      <Button type="primary" onClick={() => setVisible(true)}>
+      <Button type="primary" className="mb-4 ml-2" onClick={() => setVisible(true)}>
         新建实验室
       </Button>
       <CreateLab visible={visible} setVisible={setVisible} />
