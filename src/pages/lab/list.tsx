@@ -1,34 +1,25 @@
-import { FC } from "react";
-import { useGetLabs } from "~/pages/lab/useLab";
-import type { location } from "types/index";
 import { Table } from "antd";
+import useLab from "./hooks";
 
-const List: FC = () => {
-  const { isLoading, error, data: labs } = useGetLabs();
+const { Column } = Table;
 
-  if (isLoading) return <>Loading...</>;
+const List = () => {
+  const { labs } = useLab();
 
-  if (error) return <>An error has occurred: {(error as any).message}</>;
-
-  const columns = [
-    {
-      title: "实验室名称",
-      dataIndex: "name",
-      key: "name",
-    },
-    {
-      title: "位置",
-      dataIndex: "locations",
-      key: "locations",
-      render: (locations: location[]) => (
-        <div>
-          经度{locations[0].longitude} / 纬度{locations[0].latitude}
-        </div>
-      ),
-    },
-  ];
-
-  return <Table dataSource={labs?.data} columns={columns} rowKey="_id" />;
+  return (
+    <Table dataSource={labs} rowKey="_id">
+      <Column title="实验室名称" dataIndex="name"></Column>
+      <Column
+        title="位置"
+        dataIndex="locations"
+        render={(locations: location[]) => (
+          <div>
+            经度{locations[0].longitude} / 纬度{locations[0].latitude}
+          </div>
+        )}
+      ></Column>
+    </Table>
+  );
 };
 
 export default List;

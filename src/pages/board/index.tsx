@@ -22,15 +22,12 @@ const Board = () => {
           theme="dark"
           defaultSelectedKeys={[defaultSelectedKey]}
           mode="inline"
-        >
-          {routes.map((route) => {
-            return (
-              <Menu.Item key={route.key} icon={<route.icon />}>
-                <Link to={route.path}>{route.name}</Link>
-              </Menu.Item>
-            );
-          })}
-        </Menu>
+          items={routes.map((route) => ({
+            key: route.key,
+            label: <Link to={route.path}>{route.name}</Link>,
+            icon: <route.icon />,
+          }))}
+        ></Menu>
       </Sider>
       <Layout>
         <Header className="bg-white p-0" />

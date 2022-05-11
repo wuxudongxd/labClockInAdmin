@@ -6,13 +6,9 @@ import List from "./list";
 const Lab = () => {
   const [visible, setVisible] = useState(false);
 
-  const showDrawer = () => {
-    setVisible(true);
-  };
-
   return (
     <>
-      <Button type="primary" onClick={showDrawer}>
+      <Button type="primary" onClick={() => setVisible(true)}>
         新建实验室
       </Button>
       <CreateLab visible={visible} setVisible={setVisible} />

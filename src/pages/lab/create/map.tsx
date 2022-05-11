@@ -1,11 +1,11 @@
 import { Map, Marker } from "@pansy/react-amap";
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 interface MapProps {
   onMapChange: (locations: location[]) => void;
 }
 
-const LabMap: FC<MapProps> = ({ onMapChange }) => {
+const LabMap = ({ onMapChange }: MapProps) => {
   const [position, setPosition] = useState([103.989433, 30.581442]);
   useEffect(() => {
     onMapChange([{ longitude: position[0], latitude: position[1] }]);
