@@ -2,6 +2,9 @@ import ReactECharts from "echarts-for-react";
 
 const Analysis = () => {
   const options = {
+    title: {
+      text: "每周签到数据变化图",
+    },
     grid: { top: 8, right: 8, bottom: 24, left: 36 },
     xAxis: {
       type: "category",
@@ -12,7 +15,7 @@ const Analysis = () => {
     },
     series: [
       {
-        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        data: [82, 93, 90, 93, 129, 133, 132],
         type: "line",
         smooth: true,
       },
