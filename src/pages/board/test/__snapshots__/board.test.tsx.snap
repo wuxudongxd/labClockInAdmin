@@ -1,0 +1,9 @@
+// Vitest Snapshot v1
+
+exports[`Border working test > should work 1`] = `
+<a
+  href="/unaudit"
+>
+  待审核用户
+</a>
+`;
