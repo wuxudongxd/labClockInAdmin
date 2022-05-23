@@ -18,5 +18,4 @@
     currentDayLeaveCount: number;
     currentMonthClockRecords: clockInDays;
     currentMonthClockRecords: clockInDays;
-
 }
