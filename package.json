@@ -30,7 +30,7 @@
     "c8": "^7.11.3",
     "happy-dom": "^4.0.1",
     "typescript": "^4.6.4",
-    "vite": "^2.9.8",
+    "vite": "2.9.15",
     "vite-plugin-windicss": "^1.8.4",
     "vitest": "^0.12.7",
     "windicss": "^3.5.2"
